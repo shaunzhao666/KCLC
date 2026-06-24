@@ -16,7 +16,7 @@ lambdas_setup(beta, scene, K)
 ##### Values
 effect sizes organized by category, where each category $m$ has a vector of length $k_m$:
 ```math
-\left{ \lambda_{11}, \ldots, \lambda_{1k_1} \right}, \left{ \lambda_{21}, \ldots, \lambda_{2k_2} \right}, \ldots, \left{ \lambda_{M1}, \ldots, \lambda_{Mk_M} \right}
+\{ \lambda_{11}, \ldots, \lambda_{1k_1} \}, \{ \lambda_{21}, \ldots, \lambda_{2k_2} \}, \ldots, \{ \lambda_{M1}, \ldots, \lambda_{Mk_M} \}
 ```
 
 ####  `simulation()`
