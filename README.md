@@ -15,7 +15,7 @@ lambdas_setup(beta, scene, K)
 - K: total number of phenotypes
 ##### Values
 effect sizes organized by category, where each category $m$ has a vector of length $k_m$:
-$$\big\{\lambda_{11}, \ldots, \lambda_{1k_1}\big\}, \big\{\lambda_{21}, \ldots, \lambda_{2k_2}\big\}, \ldots, \big\{\lambda_{M1}, \ldots, \lambda_{Mk_M}\big\}$$
+$$\left\{\lambda_{11}, \ldots, \lambda_{1k_1}\right\}, \left\{\lambda_{21}, \ldots, \lambda_{2k_2}\right\}, \ldots, \left\{\lambda_{M1}, \ldots, \lambda_{Mk_M}\right\}$$
 
 ####  `simulation()`
 This function generates simulated phenotypic data and a genetic variant. It is designed for power analysis and method comparison in this paper.
@@ -25,7 +25,7 @@ simulation(n, MAF, lambda, rho_a, rho_w, c = sqrt(0.5), seed = NA)
 ##### Arguments
 - n: sample size
 - MAF: minor allele frequency
-- lambda: {(lambda11...lambda1k1), ...(lambdamM1, ....lambamMkM)} effect size for each category, could be generate by `lambdas_setup(beta, scene, K)` function
+- lambda: $\left\{\lambda_{11}, \ldots, \lambda_{1k_1}\right\}, \left\{\lambda_{21}, \ldots, \lambda_{2k_2}\right\}, \ldots, \left\{\lambda_{M1}, \ldots, \lambda_{Mk_M}\right\}$ effect size for each category, could be generate by `lambdas_setup(beta, scene, K)` function
 - rho_a: control correlation across phenotypic categoris
 - rho_w: controls the correlation among phenotypes within each category
 - c: constant
