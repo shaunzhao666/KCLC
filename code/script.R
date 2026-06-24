@@ -1,4 +1,4 @@
-source("./code/functions.R")
+source("./functions.R")
 library(optparse)
 ### input parameters ###
 option_list <- list(
