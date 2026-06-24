@@ -86,7 +86,7 @@ will estimate a threshold for P value targeting to FDP level of alpha
 - alpha: targeting FDP level
 
 ### 1.2 `script.R`: reproduce the simulation results
-run the following command in terminal to reproduce the results referring to the paper
+run the following command in terminal to reproduce the results referring to the paper. `plz ensuring that functions.R is downloaded in the same folder`
 ```bash
 Rscript --vanilla script.R -e 8888 -s 6 -r 200 -K 1000 -n 2000 -b 0.13 -f 0.3 -a 0.2 -w 0.3 -c 0.5 -A 0.05
 ```
