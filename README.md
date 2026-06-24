@@ -2,7 +2,7 @@
 This is the Github Repository for paper *Improving Phenotype Clustering in Multivariate Phenome-wide Association Studies and the Study of Pleiotropic Effects of Susceptible Genes of Lung and Prostate Cancers*
 
 ## 1 code
-### 1.1 `functions.R`: functions for simulation.
+### 1.1 `functions.R`: functions used in power analysis.
 
 #### 1.1.1 `lambdas_setup()`
 This function generate effect size corresponding to paper descriptions
@@ -20,7 +20,7 @@ effect sizes organized by category, where each category $m$ has a vector of leng
 ```
 
 ####  1.1.2 `simulation()`
-This function generates simulated phenotypic data and a genetic variant. It is designed for power analysis and method comparison in this paper.
+This function generates simulated phenotypic data and a genetic variant. It is designed for method comparison in this paper.
 ```r
 simulation(n, MAF, lambda, rho_a, rho_w, c, seed = NA)
 ```
@@ -86,7 +86,7 @@ will estimate a threshold for P value targeting to FDP level of alpha
 - alpha: targeting FDP level
 
 ### 1.2 `script.R`: reproduce the simulation results
-run this script to reproduce the simulation results in paper
+run the following command in terminal to reproduce the results referring to the paper
 ```bash
 Rscript --vanilla script.R -e 8888 -s 6 -r 200 -K 1000 -n 2000 -b 0.13 -f 0.3 -a 0.2 -w 0.3 -c 0.5 -A 0.05
 ```
