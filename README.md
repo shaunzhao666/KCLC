@@ -15,7 +15,9 @@ lambdas_setup(beta, scene, K)
 - K: total number of phenotypes
 ##### Values
 effect sizes organized by category, where each category $m$ has a vector of length $k_m$:
-$$\left{ \lambda_{11}, \ldots, \lambda_{1k_1} \right}, \left{ \lambda_{21}, \ldots, \lambda_{2k_2} \right}, \ldots, \left{ \lambda_{M1}, \ldots, \lambda_{Mk_M} \right}$$
+```math
+\left{ \lambda_{11}, \ldots, \lambda_{1k_1} \right}, \left{ \lambda_{21}, \ldots, \lambda_{2k_2} \right}, \ldots, \left{ \lambda_{M1}, \ldots, \lambda_{Mk_M} \right}
+```
 
 ####  `simulation()`
 This function generates simulated phenotypic data and a genetic variant. It is designed for power analysis and method comparison in this paper.
