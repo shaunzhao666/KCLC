@@ -161,7 +161,7 @@ Power_estimation <- function(P, alpha, H1){
   power <- numeric(nrow(P))
   for(i in 1:dim(P)[1]){
     t <- T_estimation(P[i, ], alpha)
-    po <- sum(P[i,Ha]<= t)/length(H1)
+    po <- sum(P[i,H1]<= t)/length(H1)
     power[i] <- po
   }
   return(list(power = power, mean = mean(power), variance = var(power)))
